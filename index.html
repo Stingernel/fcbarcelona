@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FC Barcelona Event 2024</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6MSY8SPHM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-T6MSY8SPHM');
+    </script>
     <link href="dist/output.css" rel="stylesheet">
 
     <style>
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .fade-in {
@@ -23,6 +38,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -54,6 +70,7 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-100">
 
     <!-- Navbar -->
@@ -69,8 +86,10 @@
                 </ul>
                 <div class="md:hidden">
                     <button id="menuToggle" class="focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
@@ -88,7 +107,8 @@
     </header>
 
     <!-- Section 1 -->
-    <section id="home" class="bg-cover bg-center h-screen parallax" style="background-image: url('img/barcelona-645107.jpg');">
+    <section id="home" class="bg-cover bg-center h-screen parallax"
+        style="background-image: url('img/barcelona-645107.jpg');">
         <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center fade-in">
             <h2 class="text-5xl font-bold text-yellow-500">Passion of FC Barcelona</h2>
             <p class="text-2xl text-white mt-4">Join us for an unforgettable event celebrating our beloved club!</p>
@@ -103,19 +123,22 @@
             <p class="text-lg text-gray-600 mb-8">Celebrate the legacy of FC Barcelona with fans and players alike.</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 shadow-md rounded-lg hover-zoom">
-                    <img src="img/ai-generated-8099000.png" alt="Meet Players" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <img src="img/ai-generated-8099000.png" alt="Meet Players"
+                        class="w-full h-48 object-cover mb-4 rounded-lg">
                     <h3 class="text-2xl font-semibold mb-4">Meet Legendary Players</h3>
                     <p class="text-gray-600">Get a chance to meet your favorite players and legends of FC Barcelona.</p>
                 </div>
                 <div class="bg-white p-8 shadow-md rounded-lg hover-zoom">
-                    <img src="img/mini_BARCA_STORE_008.jpg" alt="Exclusive Merchandise" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <img src="img/mini_BARCA_STORE_008.jpg" alt="Exclusive Merchandise"
+                        class="w-full h-48 object-cover mb-4 rounded-lg">
                     <h3 class="text-2xl font-semibold mb-4">Exclusive Merchandise</h3>
                     <p class="text-gray-600">Shop exclusive FC Barcelona merchandise and memorabilia.</p>
                 </div>
                 <div class="bg-white p-8 shadow-md rounded-lg hover-zoom">
                     <img src="img/match.jpg" alt="Live Matches" class="w-full h-48 object-cover mb-4 rounded-lg">
                     <h3 class="text-2xl font-semibold mb-4">Live Matches</h3>
-                    <p class="text-gray-600">Watch live matches and celebrate the spirit of the game with fellow fans.</p>
+                    <p class="text-gray-600">Watch live matches and celebrate the spirit of the game with fellow fans.
+                    </p>
                 </div>
             </div>
         </div>
@@ -151,21 +174,27 @@
             <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
                 <div class="mb-4">
                     <label for="name" class="block text-left text-gray-700">Full Name</label>
-                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Enter your name">
+                    <input type="text" id="name"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                        placeholder="Enter your name">
                 </div>
                 <div class="mb-4">
                     <label for="email" class="block text-left text-gray-700">Email Address</label>
-                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" placeholder="Enter your email">
+                    <input type="email" id="email"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                        placeholder="Enter your email">
                 </div>
                 <div class="mb-4">
                     <label for="ticket" class="block text-left text-gray-700">Ticket Type</label>
-                    <select id="ticket" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    <select id="ticket"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
                         <option>Standard</option>
                         <option>VIP</option>
                         <option>VVIP</option>
                     </select>
                 </div>
-                <button type="submit" class="w-full bg-blue-800 text-yellow-500 px-4 py-2 rounded-lg hover:bg-blue-900">Submit</button>
+                <button type="submit"
+                    class="w-full bg-blue-800 text-yellow-500 px-4 py-2 rounded-lg hover:bg-blue-900">Submit</button>
             </form>
         </div>
     </section>
@@ -183,4 +212,5 @@
         });
     </script>
 </body>
+
 </html>
